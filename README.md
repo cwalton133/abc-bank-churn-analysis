@@ -1,7 +1,6 @@
+
 # abc-bank-churn-analysis
 Customer Churn Analysis | Excel | Power Query | DAX | Banking Analytics — Identifying churn patterns and retention strategies using customer behavior and satisfaction data.
-
-
 # 🏦 ABC Bank Churn Analysis  
 ## 🏬 Microsoft Excel & Power Tools Analytics Project
 
@@ -50,10 +49,10 @@ The primary goal is to identify **who is churning, why they are churning, and ho
 
 ## 🗂️ Dataset Description
 - **Raw Dataset:**  
-👉 [Bank Churn Dataset](raw/bank%20churn%20Analysis.xlsx)
+👉 [Bank Churn Dataset](data/raw/bank%20churn%20Analysis.xlsx)
 
 - **Processed Dataset:**  
-👉 [Cleaned & Modeled Data](processed/solution.xlsx)
+👉 [Cleaned & Modeled Data](data/processed/solution.xlsx)
 
 Fields include demographics, financial attributes, engagement behavior, satisfaction scores, complaints, and churn status.
 
@@ -163,4 +162,3 @@ This project demonstrates how Excel-based analytics can deliver enterprise-grade
 **Charles Walton**  
 Data Analyst | Business Intelligence | Financial Analytics  
 📧 cwalton1335@gmail.com
-
