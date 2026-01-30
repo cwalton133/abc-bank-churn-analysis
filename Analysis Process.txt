@@ -1,0 +1,59 @@
+First we clean our datas and create an age group with the below formula.
+
+=SWITCH(TRUE,[@Age]>=70"Very Old",[@Age]>=50, "Old", [@Age]>=35,"Middle Age","Young")
+
+=SWITCH(TRUE,F3>=70,"Very Old",F3>=50, "Old", F3>=35,"Middle Age","Young")
+
+
+Next we insert Pivot table and add to model for proper and wider analysis
+-----------------------------------------------------------------
+and then we add measure and derive Total Customers using =COUNTROW(TABLENAME)
+-----------------------------------------------------------------
+Then we calculate Retained Customer with the below formular: 
+=CALCULATE(
+    [Total Customers],
+    Customer_Churn_Records_26[Exited] = 0
+)
+
+
+or 
+
+=CALCULATE(
+    [Total Customers],
+    FILTER(
+        Customer_Churn_Records_26,
+        Customer_Churn_Records_26[Exited] = 0
+    )
+)
+
+-----------------------------------------------------------------
+Then we calculate Churn Customer with the below formular
+
+=CALCULATE(
+    [Total Customers],
+    Customer_Churn_Records_26[Exited] = 1
+)
+-----------------------------------------------------------------
+Then we alo calculate Retention Rate by using the below formular in DAX
+=DIVIDE([Retained Customers],[Total Customers],0)
+-----------------------------------------------------------------
+Then we also calculate Churn rate using the below formular
+=DIVIDE([Churned Customers],[Total Customers],0)
+-----------------------------------------------------------------
+Then we also calculate Average Satisfaction using the below Formular
+=AVERAGE(Customer_Churn_Records_26[Satisfaction Score])
+-----------------------------------------------------------------
+We also calculate Average tenure using the below Formular
+=AVERAGE(Customer_Churn_Records_26[Tenure])
+-----------------------------------------------------------------
+We also calculate Average Age using the below formular
+=AVERAGE(Customer_Churn_Records_26[Age])
+------------------------------------------------------------------
+We have what is called Re
+=REPT("★", INT(F4)) & IF(F4-INT(F4)>=0.5,"⯨","") & REPT("☆", 5 - INT(F4) - IF(F4-INT(F4)>=0.5,1,0))
+--------------------------------------------------------------------------------
+=REPT("█",ROUND(E4*20,0)) & REPT("░",20-ROUND(E4*20,0))
+---------------------------------------------------------------------------------
+b(63, 77, 103)
+
+
