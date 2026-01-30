@@ -97,7 +97,7 @@ Fields include demographics, financial attributes, engagement behavior, satisfac
 ---
 
 ## 📊 Executive Presentation
-👉 [Download Recommendation Slides](slides/recommendation.pptx)
+👉 [Download Recommendation Slides](slides/ABC_Bank_Churn_Recommendations.pptx)
 
 ---
 
